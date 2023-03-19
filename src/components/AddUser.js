@@ -4,7 +4,7 @@ function AddUser({ dispatch, setBalance, balance }) {
     const [name, setName] = useState("");
     function handleClick(e) {
         e.preventDefault();
-        // dispatch({ type: "add", name, setBalance, balance });
+        dispatch({ type: "add", name, setBalance, balance });
         setName("");
     }
     return (
